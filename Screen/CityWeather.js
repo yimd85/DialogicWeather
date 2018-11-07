@@ -17,8 +17,7 @@ class CityWeather extends Component {
         this.refreshWeather = setInterval( function () {
             console.log(this.state);
                 this.getWeather()
-        }.bind(this), 
-        600000);
+        }.bind(this), 600000);
     };
 
     componentWillUnmount() {
@@ -51,8 +50,7 @@ class CityWeather extends Component {
                         icon: 'arrow-back', 
                         color: '#fff',
                         onPress: () => this.props.navigation.navigate('WeatherLanding'),
-                        underlayColor: 'transparent'
-                    
+                        underlayColor: 'transparent'  
                     }}
                     centerComponent={{ text: 'My Weather App', style: { color: '#fff' } }}
                 />
@@ -91,11 +89,10 @@ class CityWeather extends Component {
 
 const styles = StyleSheet.create({
     image: {
-        height: height/3,
-         
+        height: height/3,   
     },
     title: {
-        fontSize: height/50
+        fontSize: height/35
     },
     todaysTemp: {
         marginBottom: height/100,
